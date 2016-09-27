@@ -36,10 +36,15 @@ The general flow
 --------------
 
 There is the src folder, its the source.
+
 src/css folder with either css files or less files, these all get piped with gulp through a lesscss processor and put in the www/css
+
 src/view/*.jade, all these files get transpilled into html files, (piped through jade in gulpfile)
+
 src/view/index.jade, the main index file, it includes src/includes/head.jade and foot.jade
+
 src/view/partials/*.jade templates that get called in by angularjs
+
 src/js/ a place to put the actual app, this file gets piped through jshint(to check for syntax) and some other bits, it spits out one single www/app.js file. Gulp also makes some source map files so that its easy to figure out what line messed up when debugging in the browser
 
 
